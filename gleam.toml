@@ -1,0 +1,16 @@
+name = "gtm_tool_directory"
+version = "1.0.0"
+description = "Search the OneGTMLab GTM tool directory (tool API reviews, comparisons and glossary terms) offline, from Gleam or the command line."
+licences = ["MIT"]
+repository = { type = "github", user = "jaizendra-netizen", repo = "gtm-tool-finder-gleam" }
+links = [
+  { title = "Website", href = "https://www.onegtmlab.dev" },
+  { title = "Tool directory", href = "https://www.onegtmlab.dev/tool-directory" },
+]
+
+[dependencies]
+gleam_stdlib = ">= 1.0.0 and < 2.0.0"
+argv = ">= 1.0.0 and < 2.0.0"
+
+[dev_dependencies]
+gleeunit = ">= 1.0.0 and < 2.0.0"

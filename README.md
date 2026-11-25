@@ -1,0 +1,28 @@
+# gtm_tool_directory
+
+Search the [OneGTMLab](https://www.onegtmlab.dev) GTM tool directory from Gleam or your terminal:
+
+- API reviews for 66 sales and marketing tools: pricing, rate limits, keys and MCP support
+- 99 head-to-head tool comparisons, such as Apollo vs Clay
+- 110 plain-English definitions of GTM terms
+
+```sh
+gleam add gtm_tool_directory
+```
+
+```gleam
+import gleam/io
+import gleam/list
+import gtm_tool_directory
+
+pub fn main() {
+  gtm_tool_directory.search("enrichment", "Tool", 10)
+  |> list.each(fn(e) { io.println(e.name <> " " <> e.url) })
+}
+```
+
+From a checkout, `gleam run -- apollo` or `gleam run -- --kind comparison clay` prints matches with their links.
+
+Every result links to the full page on [onegtmlab.dev/tool-directory](https://www.onegtmlab.dev/tool-directory). The list is compiled into the package, so it works offline and sends no data anywhere.
+
+Also available as a [Python package](https://pypi.org/project/gtm-tool-finder/), a [Ruby gem](https://rubygems.org/gems/gtm-tool-finder) and an [Elixir package](https://hex.pm/packages/gtm_tool_finder). Built by [OneGTMLab](https://www.onegtmlab.dev), a GTM engineering agency. MIT licensed.
