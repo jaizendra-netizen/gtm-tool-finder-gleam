@@ -1,0 +1,10 @@
+{
+  "name": "gtmtooldirectory",
+  "description": "Gleam library and CLI to search the OneGTMLab GTM tool directory offline",
+  "sidebar": [
+    {
+      "title": "Overview",
+      "href": "/"
+    }
+  ]
+}
